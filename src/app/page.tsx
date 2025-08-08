@@ -54,7 +54,7 @@ export default function HomePage() {
             {siteConfig.testimonials.map((testimonial, index) => (
               <div key={index} className="bg-beige p-6 rounded-lg">
                 <p className="italic text-gray-700 mb-4">
-                  "{testimonial.quote}"
+                  &quot;{testimonial.quote}&quot;
                 </p>
                 <div className="text-sm">
                   <p className="font-semibold">{testimonial.author}</p>
