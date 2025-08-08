@@ -18,17 +18,16 @@ export function PhotoFrame({
   rotate = true,
 }: PhotoFrameProps) {
   return (
-    <div className={`relative inline-block ${className}`}>
+    <div className={`inline-block ${className}`}>
       <div
         className={`
-          relative bg-white p-2 
-          shadow-xl 
-          ${rotate ? "transform rotate-1 hover:rotate-0" : ""} 
-          transition-transform duration-300
+          relative bg-white p-2 shadow-xl 
+          transition-all duration-300 
+          hover:scale-105 hover:rotate-0
+          ${rotate ? "rotate-[2deg]" : "-rotate-[1deg]"}
         `}
         style={{
-          boxShadow:
-            "0 4px 6px rgba(0,0,0,0.1), 0 8px 20px rgba(0,0,0,0.15), 0 2px 4px rgba(0,0,0,0.06)",
+          boxShadow: "0 4px 6px rgba(0,0,0,0.1), 0 8px 20px rgba(0,0,0,0.15)",
         }}
       >
         <Image
@@ -36,10 +35,13 @@ export function PhotoFrame({
           alt={alt}
           width={width}
           height={height}
-          className="w-full h-auto"
+          className="w-full h-auto block"
         />
         {/* Inner white border */}
-        <div className="absolute inset-0 border-8 border-white pointer-events-none" />
+        <div
+          className="absolute inset-0 pointer-events-none"
+          style={{ border: "8px solid white" }}
+        />
       </div>
     </div>
   );

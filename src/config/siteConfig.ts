@@ -10,7 +10,7 @@ export const siteConfig = {
       name: "Mely Soto",
       title: "Owner & Lead Designer",
       bio: "I specialize in creating stunning balloon designs, decor, and installations for any event.",
-      quote: "Every event deserves quality decor!",
+      quote: "Crafting lasting memories one design at a time.",
     },
     contact: {
       email: "hello@eventsbymely.com",

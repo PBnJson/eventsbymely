@@ -76,7 +76,7 @@ export default function HomePage() {
       </section>
 
       {/* Gallery Preview Section */}
-      <section className="py-16 px-4 bg-white">
+      <section className="py-16 px-4 bg-white overflow-hidden">
         <div className="max-w-6xl mx-auto">
           <h2
             className="text-4xl font-bold text-center mb-12"
@@ -84,15 +84,16 @@ export default function HomePage() {
           >
             Recent Work
           </h2>
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-3 gap-8 px-4">
             {siteConfig.gallery.featured.map((image, index) => (
-              <PhotoFrame
-                key={index}
-                src={image.src}
-                alt={image.alt}
-                rotate={index % 2 === 0}
-                className="mx-auto"
-              />
+              <div key={index} className="flex justify-center">
+                <PhotoFrame
+                  src={image.src}
+                  alt={image.alt}
+                  rotate={index % 2 === 0}
+                  className="max-w-full"
+                />
+              </div>
             ))}
           </div>
         </div>
