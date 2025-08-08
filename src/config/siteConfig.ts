@@ -4,16 +4,16 @@
 export const siteConfig = {
   // Business Information
   business: {
-    name: "Balloon Arch Events",
-    tagline: "Balloon Arches & Decor Co.",
+    name: "Events by Mely",
+    tagline: "Balloon Arches & Decor Company",
     owner: {
-      name: "Your Name",
+      name: "Mely Soto",
       title: "Owner & Lead Designer",
-      bio: "I specialize in creating magical moments with stunning balloon designs for all occasions.",
-      quote: "Every event deserves a touch of whimsy and wonder!",
+      bio: "I specialize in creating stunning balloon designs, decor, and installations for any event.",
+      quote: "Every event deserves quality decor!",
     },
     contact: {
-      email: "hello@balloonarchevents.com",
+      email: "hello@eventsbymely.com",
       phone: "(555) 123-4567",
       address: {
         street: "123 Main Street",
@@ -25,15 +25,15 @@ export const siteConfig = {
     },
     hours: {
       weekdays: "9:00 AM - 6:00 PM",
-      saturday: "10:00 AM - 4:00 PM",
-      sunday: "Closed",
+      saturday: "9:00 AM - 6:00 PM",
+      sunday: "9:00 AM - 6:00 PM",
     },
   },
 
   // Website Settings
   site: {
     url: "https://eventsbymely.com", // Update this to your domain
-    logo: "/images/logo.png", // Add your logo to public/images/
+    // logo: "/images/logo.png", // Add your logo to public/images/
     favicon: "/favicon.ico",
     ogImage: "/images/og-image.png",
   },
@@ -51,20 +51,26 @@ export const siteConfig = {
 
   // Social Media Links
   social: {
-    instagram: "https://www.instagram.com/balloonarchevents",
-    facebook: "https://www.facebook.com/balloonarchevents",
-    twitter: "https://twitter.com/balloonarchevents",
-    pinterest: "https://pinterest.com/balloonarchevents",
+    instagram: "https://www.instagram.com/eventsbymely",
+    facebook: "https://www.facebook.com/eventsbymely",
+    twitter: "https://twitter.com/eventsbymely",
+    pinterest: "https://pinterest.com/eventsbymely",
+    tiktok: "https://www.tiktok.com/@eventsbymely",
+    youtube: "https://www.youtube.com/@eventsbymely",
+    linkedin: "https://www.linkedin.com/in/eventsbymely",
+    x: "https://x.com/eventsbymely",
+    snapchat: "https://www.snapchat.com/eventsbymely",
   },
 
   // SEO Configuration
   seo: {
-    defaultTitle: "Balloon Arch Events | Luxury Balloon Arches & Decor",
-    titleTemplate: "%s | Balloon Arch Events",
+    defaultTitle: "Events by Mely | Luxury Balloon Arches & Decor",
+    titleTemplate: "%s | Events by Mely",
     description:
       "Professional balloon arches, custom installations, and grab-and-go decor for events. Serving Dallas-Fort Worth since 2023.",
     keywords: [
       "balloon arch",
+      "balloon arches",
       "balloon decor",
       "event planning",
       "party decorations",
@@ -73,14 +79,28 @@ export const siteConfig = {
       "Fort Worth party decor",
       "custom balloon installations",
       "grab and go balloons",
+      "balloon decor company",
+      "balloon decor company dfw",
+      "balloon decor company dallas",
+      "balloon decor company fort worth",
+      "balloon decor company texas",
+      "balloon decor company texas",
+      "luxury balloon arches",
+      "luxury decor",
+      "luxury decor company",
+      "luxury decor company dfw",
+      "luxury decor company dallas",
+      "luxury decor company fort worth",
+      "luxury decor company texas",
+      "luxury decor company texas",
     ],
     openGraph: {
       type: "website" as const,
       locale: "en_US",
-      siteName: "Balloon Arch Events",
+      siteName: "Events by Mely",
     },
     twitter: {
-      handle: "@balloonarchevents",
+      handle: "@eventsbymely",
       cardType: "summary_large_image" as const,
     },
   },
@@ -122,6 +142,9 @@ export const siteConfig = {
     "Graduation Parties",
     "Anniversary Celebrations",
     "Holiday Parties",
+    "Baby Showers",
+    "Gender Reveals",
+    "Sports Events",
   ],
 
   // Testimonials
@@ -248,7 +271,7 @@ export const siteConfig = {
   // Theme Colors (matches your Tailwind config)
   theme: {
     colors: {
-      primary: "#FF0000", // Testing red, should be #f54d80
+      primary: "#f54d80", // Testing red, should be #f54d80
       secondary: "#8fd4bf", // Green
       accent: "#d6c304", // Yellow
       beige: "#f5f5dc", // Light beige
