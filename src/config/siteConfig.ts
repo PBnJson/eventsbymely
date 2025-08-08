@@ -36,7 +36,7 @@ export const siteConfig = {
     // logo: "/images/logo.png", // Add your logo to public/images/
     favicon: "/favicon.ico",
     ogImage: "/images/og-image.png",
-    logo: "/images/logo.svg",
+    logo: "/images/logo.png",
   },
 
   // Navigation Links

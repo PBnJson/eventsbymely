@@ -26,7 +26,7 @@ export function HeroSection({
       </h1>
       <p className="text-2xl text-secondary">Balloon Arches & Decor Co.</p>{" "}
       {/* Adapted subheading */}
-      <p className="max-w-2xl mx-auto text-lg">
+      <p className="max-w-2xl mx-auto text-lg text-secondary">
         Hi! I&apos;m {ownerName}, the owner and lead designer. {description}
       </p>
       <p className="italic text-accent text-xl">&quot;{quote}&quot;</p>
