@@ -112,7 +112,7 @@ export default function HomePage() {
               <div key={index} className="bg-white p-8 rounded-lg shadow-lg">
                 <div className="mb-4">{"⭐".repeat(testimonial.rating)}</div>
                 <p className="italic text-gray-700 mb-6">
-                  "{testimonial.quote}"
+                  &quot;{testimonial.quote}&quot;
                 </p>
                 <div className="border-t pt-4">
                   <p className="font-semibold">{testimonial.author}</p>
