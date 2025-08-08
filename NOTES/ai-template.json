@@ -1,0 +1,82 @@
+{
+  "project": "Reusable Event Planning Website Template",
+  "reference": "132events.com",
+  "goal": "Modern, responsive, highly-componentized site for balloon/event businesses",
+  "requirements": {
+    "componentization": true,
+    "manipulability": true,
+    "future_packaging": true,
+    "seo_integration": true,
+    "tech_stack": ["Next.js", "React", "Tailwind CSS", "TypeScript"]
+  },
+  "tech_stack_details": {
+    "framework": "Next.js (App Router)",
+    "styling": "Tailwind CSS with custom theme",
+    "components": "Each in /components",
+    "data_management": "/config/siteConfig.ts for business data",
+    "forms": "React Hook Form",
+    "deployment": "Vercel-optimized, agnostic",
+    "dependencies": "Minimal"
+  },
+  "core_components": [
+    { "name": "Header", "props": ["logoSrc", "businessName", "navLinks"] },
+    { "name": "Footer", "props": ["socialLinks", "copyright"] },
+    {
+      "name": "Section",
+      "props": ["title", "subtitle", "content", "imageSrc", "bgColor", "layout"]
+    },
+    { "name": "Button", "props": ["label", "href", "variant", "className"] },
+    { "name": "Testimonial", "props": ["quote", "author", "role"] },
+    { "name": "ContactForm", "props": ["fields", "submitLabel"] },
+    {
+      "name": "Hero",
+      "props": ["heading", "description", "imageSrc", "ctaButton"]
+    },
+    {
+      "name": "ServiceCard",
+      "props": ["title", "description", "link", "imageSrc"]
+    }
+  ],
+  "pages": [
+    {
+      "path": "/",
+      "sections": ["Hero", "OwnerIntro", "ServicesHighlight", "Testimonial"]
+    },
+    {
+      "path": "/grab-and-go",
+      "sections": ["Hero", "Description", "Testimonial"]
+    },
+    {
+      "path": "/custom-installation",
+      "sections": ["Hero", "EventTypes", "Process", "QuoteForm", "Testimonial"]
+    },
+    {
+      "path": "/contact",
+      "sections": ["Intro", "ContactForm", "OtherWays"]
+    }
+  ],
+  "seo": {
+    "metadata": ["title", "description", "keywords", "OpenGraph", "Twitter"],
+    "structured_data": ["JSON-LD: LocalBusiness", "Services"],
+    "sitemap_and_robots": "Dynamic, allow crawlers",
+    "ai_geo_seo": {
+      "shareable_urls": true,
+      "keywords": ["gpt", "DFW", "balloon", "event"],
+      "alt_text": "Descriptive, geo-relevant"
+    },
+    "best_practices": ["Headings", "fast_loading", "mobile", "canonical_tags"]
+  },
+  "extensibility": {
+    "npm_package": "@event-template/core",
+    "cli_tool": "event-cli",
+    "documentation": "README.md, prop tables",
+    "testing": "Unit tests (Jest)"
+  },
+  "implementation_steps": [
+    "Setup project (npx create-next-app@latest)",
+    "Build components",
+    "Build pages",
+    "Add SEO",
+    "Ensure configurability/reusability"
+  ]
+}

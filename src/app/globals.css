@@ -6,6 +6,13 @@
 }
 
 @theme inline {
+  /* Define your custom colors here for Tailwind v4 */
+  --color-primary: #f54d80; /* Pink */
+  --color-secondary: #8fd4bf; /* Green */
+  --color-accent: #d6c304; /* Yellow */
+  --color-beige: #f5f5dc; /* Light beige */
+
+  /* Keep existing theme vars */
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
